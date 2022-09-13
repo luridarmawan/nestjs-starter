@@ -7,8 +7,12 @@ type User {
   provider: String!
   providerId: String!
   username: String!
+  password: String!
   name: String!
   orders: [Order]!
+  options: String!
+  ip_addr: String!
+  last_visit: DateTime!
   created_at: DateTime!
   updated_at: DateTime!
 }

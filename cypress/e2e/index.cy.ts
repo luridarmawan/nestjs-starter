@@ -1,6 +1,6 @@
 describe('/', () => {
   it('contains welcome message', () => {
     cy.visit('/');
-    cy.contains('Hello from NestJS');
+    cy.contains('Hello world from NestJS');
   });
 });

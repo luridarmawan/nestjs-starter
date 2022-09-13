@@ -44,7 +44,7 @@ jobs:
   deploy-staging:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    if: github.ref == 'refs/heads/master' && github.repository_owner == 'thisismydesign'
+    if: github.ref == 'refs/heads/master' && github.repository_owner == 'luridarmawan'
     needs: [build-and-push-image-to-heroku]
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
@@ -80,7 +80,7 @@ jobs:
   deploy-production:
     runs-on: ubuntu-latest
     timeout-minutes: 10
-    if: github.ref == 'refs/heads/master' && github.repository_owner == 'thisismydesign'
+    if: github.ref == 'refs/heads/master' && github.repository_owner == 'luridarmawan'
     needs: [build-and-push-image-to-heroku, test-e2e-staging]
     env:
       HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}

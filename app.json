@@ -1,6 +1,6 @@
 {
   "name": "nestjs-starter",
-  "repository": "https://github.com/thisismydesign/nestjs-starter",
+  "repository": "https://github.com/luridarmawan/nestjs-starter",
   "env": {
     "NODE_ENV": {
       "value": "production"
@@ -47,5 +47,6 @@
       }
     }
   ],
-  "stack": "container"
+  "stack": "container",
+  "repository_ref": "https://github.com/thisismydesign/nestjs-starter"
 }

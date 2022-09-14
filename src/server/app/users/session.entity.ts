@@ -5,14 +5,11 @@ import {
   Index,
   CreateDateColumn,
   UpdateDateColumn,
-  OneToMany,
 } from 'typeorm';
 import { ObjectType, Field } from '@nestjs/graphql';
-import { Provider } from 'src/server/common/types/user';
-import { Order } from '../orders/order.entity';
 
 @ObjectType()
-@Entity("auth_sessions")
+@Entity('auth_sessions')
 export class Session {
   @Field()
   @PrimaryGeneratedColumn()

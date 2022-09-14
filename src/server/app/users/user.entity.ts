@@ -11,7 +11,7 @@ import { Provider } from 'src/server/common/types/user';
 import { Order } from '../orders/order.entity';
 
 @ObjectType()
-@Entity("auth_users")
+@Entity('auth_users')
 export class User {
   @Field()
   @PrimaryGeneratedColumn()

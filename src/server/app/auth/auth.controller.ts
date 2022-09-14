@@ -1,8 +1,8 @@
 import { Controller, Get, Post, Req, Res } from '@nestjs/common';
-import { Request, Response } from 'express';
+import { Request } from 'express';
 //const logger = require('../../utils/logger');
-const utils = require('../../utils/utils');
-const Constant = require('../../constants');
+//const utils = require('../../utils/utils');
+//const Constant = require('../../constants');
 
 @Controller('auth')
 export class AuthController {
@@ -13,19 +13,16 @@ export class AuthController {
 
   @Post('login')
   async login(@Req() req: Request) {
-
-    return utils.Output(400, Constant.ERR_NOT_PERMITTED);
+    return req.body;
   }
 
   @Post('logout')
   async logout(@Req() req: Request) {
-
-    return utils.Output(400, Constant.ERR_NOT_PERMITTED);
+    return req.body;
   }
 
   @Post('register')
   async register(@Req() req: Request) {
-
-    return utils.Output(400, Constant.ERR_NOT_PERMITTED);
+    return req.body;
   }
 }

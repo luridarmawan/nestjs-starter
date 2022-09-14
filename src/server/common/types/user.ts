@@ -12,4 +12,5 @@ export class User {
   last_visit: Date;
   created_at: Date;
   updated_at: Date;
+  status_id: number;
 }

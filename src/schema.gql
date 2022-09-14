@@ -15,6 +15,7 @@ type User {
   last_visit: DateTime!
   created_at: DateTime!
   updated_at: DateTime!
+  status_id: Float!
 }
 
 """

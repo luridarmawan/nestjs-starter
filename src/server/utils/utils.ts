@@ -28,3 +28,41 @@ export const info = (str) => {
 export const title = (str) => {
   console.log(color.bold(str));
 };
+
+/**
+ * dateFormat (new Date (), '%Y-%m-%d %H:%M:%S', true)
+ *   returns '2012-05-18 05:37:21'
+ *
+ * @param date
+ * @param fstr
+ * @param utc
+ * @returns
+ */
+export const dateFormat = (date, fstr, utc = false) => {
+  const utcFunction = utc ? 'getUTC' : 'get';
+  return fstr.replace(/%[YmdHMS]/g, function (m) {
+    switch (m) {
+      case '%Y':
+        return date[utcFunction + 'FullYear'](); // no leading zeros required
+      case '%m':
+        m = 1 + date[utcFunction + 'Month']();
+        break;
+      case '%d':
+        m = date[utcFunction + 'Date']();
+        break;
+      case '%H':
+        m = date[utcFunction + 'Hours']();
+        break;
+      case '%M':
+        m = date[utcFunction + 'Minutes']();
+        break;
+      case '%S':
+        m = date[utcFunction + 'Seconds']();
+        break;
+      default:
+        return m.slice(1); // unknown code, remove %
+    }
+    // add leading zero if required
+    return ('0' + m).slice(-2);
+  });
+};

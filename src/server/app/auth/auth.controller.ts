@@ -1,8 +1,9 @@
 import { Controller, Get, Post, Req, Res } from '@nestjs/common';
 import { Request } from 'express';
+const utils = require('../../utils/utils');
 //const logger = require('../../utils/logger');
-//const utils = require('../../utils/utils');
 //const Constant = require('../../constants');
+//const utils = import('../../utils/utils');
 
 @Controller('auth')
 export class AuthController {

@@ -11,7 +11,7 @@ import { Provider } from 'src/server/common/types/user';
 import { Order } from '../orders/order.entity';
 
 @ObjectType()
-@Entity()
+@Entity('auth_users')
 export class User {
   @Field()
   @PrimaryGeneratedColumn()
@@ -63,4 +63,8 @@ export class User {
   @Column()
   @UpdateDateColumn()
   updated_at: Date;
+
+  @Field()
+  @Column({ default: 0 })
+  status_id: number;
 }

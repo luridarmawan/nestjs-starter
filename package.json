@@ -1,7 +1,7 @@
 {
   "name": "nestjs-starter",
   "private": true,
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Nest TypeScript starter repository",
   "license": "MIT",
   "scripts": {
@@ -34,7 +34,7 @@
     "@nestjs/common": "^9.0.11",
     "@nestjs/config": "^2.2.0",
     "@nestjs/core": "^9.0.11",
-    "@nestjs/graphql": "^10.1.1",
+    "@nestjs/graphql": "^10.1.2",
     "@nestjs/jwt": "^9.0.0",
     "@nestjs/passport": "^9.0.0",
     "@nestjs/platform-express": "^9.0.11",
@@ -47,7 +47,7 @@
     "google-auth-library": "^8.5.1",
     "graphql": "^16.6.0",
     "nestjs-console": "^8.0.0",
-    "next": "^12.3.0",
+    "next": "^12.3.1",
     "passport": "^0.6.0",
     "passport-google-oauth20": "^2.0.0",
     "passport-jwt": "^4.0.0",
@@ -60,7 +60,7 @@
     "rimraf": "^3.0.2",
     "rxjs": "^7.5.6",
     "ts-morph": "^16.0.0",
-    "typeorm": "^0.3.9"
+    "typeorm": "^0.3.10"
   },
   "devDependencies": {
     "@faker-js/faker": "^7.5.0",
@@ -81,7 +81,7 @@
     "@types/react-dom": "^18.0.6",
     "@types/supertest": "^2.0.12",
     "@typescript-eslint/eslint-plugin": "^5.37.0",
-    "@typescript-eslint/parser": "^5.37.0",
+    "@typescript-eslint/parser": "^5.38.0",
     "cypress": "^10.8.0",
     "dotenv-flow": "^3.2.0",
     "eslint": "^8.23.1",
